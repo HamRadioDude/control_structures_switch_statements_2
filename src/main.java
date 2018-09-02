@@ -7,45 +7,35 @@ public class main{
     // ***********************************************************************************************************
         Scanner user_INPUT = new Scanner(System.in);
         System.out.println("Enter any number 1-10 to get the Italian translation: ");
-        int user_PICK = user_INPUT.nextInt(); // from tutorialspoint: The java.util.Scanner.nextInt() method Scans the next token of
-                                              // the input as an int
-       // SK - 09/02/2017 - Really right here, in future development, I need to make sure the input nextint is actually a number.. if not, it would prompt an error.
+        int user_PICK = user_INPUT.nextInt(); // from tutorialspoint: The java.util.Scanner.nextInt() method Scans the next token of // the input as an int
+        String user_selection;
 
-        if (user_PICK > 0 && user_PICK <= 10) {
             switch (user_PICK) {
-                case 1:
-                    System.out.println(user_PICK + " in Italian is: UNO ");
+                case 1: user_selection = "UNO";
                     break;
-                case 2:
-                    System.out.println(user_PICK + " in Italian is: DUE ");
+                case 2: user_selection = "DUE";
                     break;
-                case 3:
-                    System.out.println(user_PICK + " in Italian is: TRE ");
+                case 3: user_selection = "TRE";
                     break;
-                case 4:
-                    System.out.println(user_PICK + " in Italian is: QUATTRO ");
+                case 4: user_selection = "QUATTRO";
                     break;
-                case 5:
-                    System.out.println(user_PICK + " in Italian is: CINQUE ");
+                case 5: user_selection = "CINQUE";
                     break;
-                case 6:
-                    System.out.println(user_PICK + " in Italian is: SEI ");
+                case 6: user_selection = "SEI";
                     break;
-                case 7:
-                    System.out.println(user_PICK + " in Italian is: SETTE ");
+                case 7: user_selection = "SETTE";
                     break;
-                case 8:
-                    System.out.println(user_PICK + " in Italian is: OTTO ");
+                case 8: user_selection = "OTTO";
                     break;
-                case 9:
-                    System.out.println(user_PICK + " in Italian is: NOVE ");
+                case 9: user_selection = "NOVE";
                     break;
-                case 10:
-                    System.out.println(user_PICK + " in Italian is: DIECI ");
+                case 10: user_selection = "DIECE";
                     break;
+
+                default: user_selection = "ERROR, INVALID ENTRY";
+
             }
-        } else
-            System.out.println("You did not enter a number 1 - 10");
+            System.out.println(user_PICK + " in Italian is: " + user_selection);
     }
 }
 
